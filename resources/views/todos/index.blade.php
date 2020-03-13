@@ -14,12 +14,15 @@
                 <li class="list-group-item">
                     <span>{{$todo->name}}</span>
                     <a href="/todos/{{$todo->id}}" class="btn btn-primary btn-sm float-right ml-m1">Visualizar</a>
-                    <a href="/todos/edit/{{$todo->id}}" class="btn btn-warning btn-sm float-right ml-m1">Editar</a>
-                    <a href="#" class="btn btn-danger btn-sm float-right ">Excluir</a>
+                    <a href="/todos/{{$todo->id}}/edit" class="btn btn-warning btn-sm float-right ml-m1">Editar</a>
+                    <a href="/todos/{{$todo->id}}/delete" class="btn btn-danger btn-sm float-right ">Excluir</a>
                 </li>
 
             @endforeach
         </ul>
+        <div class="row">
+            <a href="/new-todo" class="btn btn-primary btn-sm mt-4">Novo Todo</a>
+        </div>
     </div>
 </body>
 </html>

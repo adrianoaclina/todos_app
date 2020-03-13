@@ -9,7 +9,7 @@
 <body>
     <div class="container">
         <h1>Editar</h1>
-        <form action="">
+        <form action="store-edit" method="post">
             <div class="form-group">
                 <label for="id">Id</label>
                 <input class="form-control" type="text" name="id" value="{{$todo->id}}" disabled>
